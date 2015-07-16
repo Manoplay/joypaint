@@ -1,5 +1,5 @@
 all:
-	gcc -lncurses src/main.c -o joypaint
+	gcc  src/main.c -lncurses -o joypaint
 
 clean:
 	rm joypaint
