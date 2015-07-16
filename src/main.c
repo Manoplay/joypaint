@@ -188,7 +188,7 @@ while(1){
 			break;
 			case 2:
 			if(getlogin() == "root"){
-			sysyem("sudo /usr/share/joypaint/save.sh");	
+			system("sudo /usr/share/joypaint/save.sh");	
 			}else{
 			system("tty > .tt; . /usr/share/joypaint/init.sh | echo $USER_PASSWD | sudo -S /usr/share/joypaint/save.sh; rm .tt");
 			}
